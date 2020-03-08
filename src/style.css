@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    min-width: 320;
+    text-align: center;
+    padding: .25em;
+    height: 2em;
+    background-color: rgb(118, 118, 255);
+}
+main {
+display: flex;
+flex-direction: row;
+align-items: stretch;
+height: calc(100% - 3em);
+}
+
+#searchDiv {
+    min-width: 320px;
+    max-width: 25%;
+background-color: cadetblue;
+}
+
+#dashboard {
+min-width: 320px;
+width: 75%;
+display: flex;
+flex-direction: column;
+}
+
+#main {
+min-width: 320;
+background-color: chartreuse;
+height: 55%;
+}
+
+#cards {
+min-width: 320;
+background-color: yellow;
+width: 100%;
+height: 45%;
+display: flex;
+float: row;
+}
+
+.card {
+width: 18%;
+min-width: 176px;
+height: 80%;
+background-color: blue;
+margin: 0 auto;
+margin-top: 15px;
+border-radius: 5px;
+}

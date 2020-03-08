@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type = "text/css" href="src/style.css">
     <script src="src/JQuerySlim.js"></script>
+    <script src="https://kdeguzm3.github.io/DeepDiveJS//diver.js"></script>
 </head>
 <body>
     <div id="background" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;"></div>
-    <div id="foreground" style="position: absolute; top: 0; left: 0; right: 0;">
- 
-
+    <div id="foreground" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+        <header><h1>Weather Dashboard</h1></header>
+        <main>
+        <div id="searchDiv">
+            <div id="searchBar">
+                <h2>Search for a city:</h2>
+                <input type="text" name="city search" id="searchText">
+                <div id="button">Go</div>
+            </div>
+            <div id="history"></div>
+</div>
+        <div id="dashboard">
+        </div>
+    </main>
     </div>
 <script src="src/script.js"></script>
 </body>
