@@ -7,11 +7,10 @@ let forecast = {
     days: []
 }; 
 
-if (history != []) {city = history[0]; buildHistory()};
+if (history != []) {buildHistory()};
 //Event Listener for City Button
 $("#button").click(function(event) {
     let query = document.querySelector("#searchText").value;
-    console.log(query)
     if (query != ""){
         city = query.toLowerCase();
         if (history.includes(query.toLowerCase()) == false) {
@@ -57,7 +56,6 @@ async function getData(param) {
                 current.uvColor = "red"
             } else {current.uvColor = "yellow"
         }
-        console.log(current);
     
         //collecting info for the 5 day cards
         response.list.forEach((element, index) => {
@@ -110,7 +108,6 @@ async function getData(param) {
                 .writer(`Temp: ${forecast[tmpDate].tempAvg}°F`)
                 .writer(`Humidity: ${forecast[tmpDate].humAvg}%`);
             }
-        console.log(forecast);
 
 }
 
