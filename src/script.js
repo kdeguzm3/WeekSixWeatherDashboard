@@ -25,6 +25,14 @@ $("#button").click(function(event) {
     }
 })
 
+//event listener for history items
+document.querySelector("#history").addEventListener("click", (event) => {
+    if (event.target.classList.contains(".historyDiv")) {
+        city = event.target.getAttribute("data-value");
+        getData(city).catch(error => console.log(error));
+    }
+    })
+
 
 //get data function
 async function getData(param) {
