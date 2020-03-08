@@ -62,7 +62,8 @@ async function getData(param) {
             current.uvColor = "green"}
             else if (uvInfo.value >= 8) {
                 current.uvColor = "red"
-            } else {current.uvColor = "yellow"
+            } else {
+                current.uvColor = "yellow"
         }
     
         //collecting info for the 5 day cards

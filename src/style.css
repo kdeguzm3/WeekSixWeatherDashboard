@@ -136,6 +136,19 @@ text-align: center;
 }
 
 #background {
-    background-image: url(https://www.ecopetit.cat/wpic/mpic/1-15759_raining-windows-10-rain-drops-nature-android-wallpaper.jpg);
+    background-image: url(https://images.unsplash.com/photo-1533142266415-ac591a4deae9?ixlib=rb-1.2.1&w=1000&q=80);
     background-size: cover;
+}
+
+.yellow p {
+    background-color: yellow;
+}
+
+.green p {
+    background-color: green;
+}
+
+.red p {
+    background-color: red;
+    color: white;
 }
