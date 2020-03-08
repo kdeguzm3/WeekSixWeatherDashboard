@@ -44,7 +44,7 @@ async function getData(param) {
         method: "GET"
     });
     let uvInfo = await $.ajax({
-        url: `http://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${response.city.coord.lat}&lon=${response.city.coord.lon}`,
+        url: `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${response.city.coord.lat}&lon=${response.city.coord.lon}`,
         method: "GET"
     })
 
