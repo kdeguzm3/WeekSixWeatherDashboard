@@ -30,7 +30,7 @@ flex-direction: column;
     padding: .5em;
     min-width: 320px;
     max-width: 100%;
-    background-color: rgba(168, 168, 168, .7);
+    background-color: rgba(168, 168, 168, .3);
     text-align: center;
 }
 
@@ -79,7 +79,7 @@ flex-direction: column;
 #main {
     text-align: center;
     min-width: 320;
-    background-color: rgba(168, 168, 168, .7);
+    background-color: rgba(168, 168, 168, .1);
     padding: 15px;
 }
 
@@ -110,7 +110,7 @@ flex-direction: column;
         }
 #cards {
 min-width: 320;
-background-color: rgba(168, 168, 168, .8);
+background-color: rgba(168, 168, 168, .1);
 display: flex;
 float: row;
 flex-wrap: wrap;
@@ -136,7 +136,7 @@ text-align: center;
 }
 
 #background {
-    background-image: url(https://images.unsplash.com/photo-1533142266415-ac591a4deae9?ixlib=rb-1.2.1&w=1000&q=80);
+    background-image: url(./ballos.jpg);
     background-size: cover;
 }
 
