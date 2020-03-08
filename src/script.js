@@ -27,7 +27,7 @@ $("#button").click(function(event) {
 
 //event listener for history items
 document.querySelector("#history").addEventListener("click", (event) => {
-    if (event.target.classList.contains(".historyDiv")) {
+    if (event.target.classList.contains("historyDiv")) {
         city = event.target.getAttribute("data-value");
         getData(city).catch(error => console.log(error));
     }
@@ -96,6 +96,7 @@ async function getData(param) {
             //building main dashboard
             dd("#dashboard")
             .diver("#main")
+            .diver("#innerMain")
             .imager(current.icon)
             .writer(`${current.city} (${current.date})`, "h1")
             .writer(`Temperature: ${current.temp}°F`, "p")
@@ -123,7 +124,7 @@ function buildHistory(){
     $("#history").empty();
     history.forEach(element => {
         let newHistoryDiv = document.createElement("div");
-        newHistoryDiv.classList.add(".historyDiv");
+        newHistoryDiv.classList.add("historyDiv");
         newHistoryDiv.setAttribute("data-value", element);
         newHistoryDiv.textContent = element;
         $("#history").append(newHistoryDiv)
