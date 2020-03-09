@@ -38,6 +38,9 @@ document.querySelector("#history").addEventListener("click", (event) => {
 async function getData(param) {
     let apiKey = "75c4ff13d86a6fdee4d409b1646fc46c";
     let weatherURL = `https://api.openweathermap.org/data/2.5/forecast?q=${param}&appid=${apiKey}&units=imperial`;
+    forecast = {
+        days: []
+    };
     $("#dashboard").html("");
     let response = await $.ajax({
         url: weatherURL,
