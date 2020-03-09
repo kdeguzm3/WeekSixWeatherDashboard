@@ -52,6 +52,7 @@ async function getData(param) {
     })
 
         //Collecting info for the main div
+        console.log(response);
         current.city = response.city.name;
         now = response.list[0];
         dateArray = now.dt_txt.split(" ");
@@ -105,6 +106,7 @@ async function getData(param) {
             .writer(`${current.city} (${current.date})`, "h1")
             .writer(`Temperature: ${current.temp}°F`, "p")
             .writer(`Humidity: ${current.humidity}%`, "p")
+            .writer(`Wind Speed: ${current.windSpd} MPH`)
             .diver(`.uvi .${current.uvColor}`)
             .writer(`UV Index: ${current.uvIndex}`)
 
